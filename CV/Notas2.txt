@@ -1,0 +1,91 @@
+Notas2
+en head se establecen los metadatos, datos que establecen otros datos
+
+Los metadatos describen información importante dentro de una página
+estructura basica (va en HEAD): <meta name="" content="">  //nombre, valor
+Metadatos imporatntes
+--Protocolo opengraph
+usan las redes sociales para mostrar previews de un link al ser publicado, define los nombres y que valor se le asigana a cada uno de ellos (de los metadatos)
+
+
+Los atributos los llevan en las etiquetas, el valor del atributo va entre comillas simples o dobles
+Los atributos booleanos son falsos si no estan en la etiqueta, por otro lado la mayoria si estan son verdaderos, ejemplo:
+<input required> //required es el atributo
+<input autofocus>
+https://www.w3schools.com/html/html_attributes.asp
+
+
+Head >/ header
+Pueden haber N elementos Header, este es para todos los encabezados, de una seccion, de toda la pagina
+un elemento, etc.
+
+Div
+Su función unica es agrupar elementos, su finalidad es hacerlo para controlar los cambios a las propiedades que se realizen con el CSS
+elementos cuyo unico proposito es recibir propiedades en CSS
+
+Colores
+Los colores se peuden expresar de diferentes maneras:
+1.- Nombre del color (en inglés) 140 nombres
+2.- RGB (10,20,50)
+3.- Hexadecimal #(3-6 digitos)
+
+CRTL + ALT + C para abrir color picker
+
+Tipografía:
+Tipo de texto, decoraciones del texto, sombras, etc
+font-weight:: escala de 100 en 100 y 400 es normal, 700 negritas, etc etc
+
+Los Header etiquetas H1-h6 son lo principal que busca el buscadore n lrelacion a la pagina
+h1 debe ser usado solo 1 vez por pagina
+
+
+Espacios en Blanco.
+Margin- Elementos fuera del elemento, espacios entre elementos
+
+Padding- Elementos dentro del elemento, a los limites del otro
+
+seccion
+Separa elementos de la pagina web, no tiene efecto visual solamente para darlse sentido para que cuando otro programa lea el sitio, pueda analizar
+la semántica
+
+
+
+
+Listas
+Ordenadas   OL-La declara   LI- cada elemento dentro de la lista    -> Tablas de posiciones
+
+    Rankings
+    Clasificaciones /posiciones
+    Elementos ordenados
+    Serie de pasos
+    etc.
+
+
+Desordenadas UL-La declara   LI- Elemento dentro de la lista    ->> No llevan un orden los elementos pero tienen relacion entre sí
+    Elementos sin Orden
+    Elementos en comun
+    Eleementos que describen
+
+
+Listas de definiciones   DL-Se define   DT-Definir un término  DD-La definicion del término
+    Usado para serie de conceptos y definiciones
+    Diciconarios
+    Conceptos
+    Puntos con explicaciones
+
+Links.
+Los links tienen estados, esto es tanto si fue visitado como si no, así como el comportamiento que tendrán, es decir, abrir el link en
+la misma pestaña, una nueva pestaña, etc, etc (_blank,_parent...)
+
+
+Rutas
+pueden ser absolutas o relativas,
+en una pag web todas las rutas deben ser Relativas
+Absoluta, desde el punto base de la pc donde está la imagen o el archivo
+Relativo, inician a partir de la pag donde te encuentras
+la img debe estar dentro de la misma carpeta del proyecto o la pagina
+
+
+Host y Dominio
+dependen del espacio de almacenamiento
+el domino depende el tipo de dominio que se quiere, .com. mx. .etc
