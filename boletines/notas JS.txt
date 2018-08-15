@@ -1,0 +1,35 @@
+JAVASCRIPT
+Es un lenguaje interpretado, para ejecutar el codigo, el interprete lee las lineas de codigo en tiempo de ejecucion
+Los leng compulados (JAVA y C) este lee todo el programa en tiempo de compilación.
+
+Dado que el lenguaje es interpretado, si se tiene un error solo se sabra hasta que el interprete ejecute esa linea
+el compilador puede detectar estos errores antes (lo que no psa con JS)
+
+let nombre = 'Erick';
+console.log(nombre);
+
+-JS es un lenguaje debilmente y dinámicamente tipado
+-tipado.- referencia a las variables, estas peuden o no tener un tipo
+  tipado: no especifica un tipo de dato
+
+-tipado dinamico: el interprete intentará asignarle un tipo a la variable deacuerdo al valor que se almacene en la variable,
+  gracias a esto, se puede reutilizar la var para guardar 1ro nums, luego cadenas de texto, etc, la var nunca considerara un tipo fijo
+  para los datos que almacena
+
+-tipado debil: el interprete no evalua el tipo de dato hasta que el programa se encuentra en ejecución, si no te corrigen los tipos, es un lenguaje debilmente tipado
+
+-es Case Sensitive: que distingue entre MAYUSCULAS y minusculas
+
+DOM
+Document Object Model
+cuando la pagina termina de cargarse el navegador genera una representación de nuestro sitio en forma de árbol (DOM).
+Este permite a JS acceder, recorrer, crear, reemplazar, editar y eliminar elementos HTML.
+
+Es una interfaz de programación estándar, esto quiere decir que está pensado como un medio de
+comunicación para acceder a los elementos que forman nuestro sitio web.
+
+El DOM se ve como un árbol en el que cada hoja o rama representa un elemento de HTML, la idea de representarlo como un
+árbol viene de buscar representar la jerarquía de nuestros documentos, es decir,
+quiénes son hijos de quién, cuáles son hermanos, etc.
+
+Los eventos ligan una acción con una ejecución de un programa

@@ -1,0 +1,40 @@
+Servidor, aloja o almacena un sitio web, cualquier computadora con un programa capaz de organizarlas peude ser un Servidor
+hay servidores que requieren conexion bajo un servidor web con conexion encriptada
+
+Esto está disponible para los desarrolladores.
+un servidor web puede ser escrito en muchso lenguajes de programación.
+https://gist.github.com/henriquemenezes/cb8528078d1229ed7837
+
+
+Node JS es un entorno de ejecucion de JS
+Para iniciar un servidor en node JS
+
+En CMD node -v para conocer la versión
+npm es un manejador de paqeutes para poder trabajar librerias hechas para este entorno de ejecución
+para concoer su versión usamos npm -v
+
+El servidor web se inicia usando:
+npm install -g node-static
+con esto está instalado el servidor web
+
+para ejeectuar un programa podemos movernos por consola, ubicando al ruta absoluta donde está ubicado el proyecto
+empleando cd (ruta absoluta)
+
+una vez ubicados usamos
+static -p 8000    on esto levantamos el servidor en X dirección en el puerto especificado
+este servidor es uno local de desarrollo
+
+Hostname: etiqueta o nommbre asignado a un dispositivo dentro de la red, estos evitan que se tenga que recordar la dirección
+localhost : 8000
+lovalhost etiqueta asignada al dispositivo local
+Puerto, puertos disponibles para que el equipo se coencte a la red, en total hay 65535 puertos disponibles
+0-1023 puertos del sistema (ya tienen una tarea asignada por el sistema), solo el sistema puede hacer uso de estos
+1024-65535 puerto disponibles para su uso,
+8000, 8080 o 3000 se usan generalmente para colocar servidores web
+cuando no se coloca un puerto, se asume que este se está conectando al puerto 80, esto está en base al protocolo HTTP,
+pues este es el usado para comunicarse entre el navegador y el servidor web, si la pagina usa conexion encriptada (https),
+el puerto es 443
+
+ctrl + c, para cerra el servidor
+
+Se debe definir una estructura para las carpetas

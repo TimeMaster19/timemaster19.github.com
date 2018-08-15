@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--metadato que altera el viewport, todas las paginas que desarrolle deben tener al menos este metadato
+      width=device-widht hace que la pag sea igual al ancho de nuestro dispositivo
+      initial-scale=1.0 incdica que no tenga zoom inicial
+      también hay otras propiedades por ej prohibir el zoom, etc-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/animate.css"><!--../ salir de la carpeta-->
+  <title>The top ten pizzas from CDMX</title>
+</head>
+<body>
+  <div class="container">
+    <!--la clase animated, permite colocar animaciones por animated.css seguido del nombre de la animación-->
+    <div class="content animated zoomInUp">
+      <div class="actions">
+        <a href="../index.html" class="close">
+          <span>X</span>
+        </a>
+      </div>
+      <header>
+        <!--Describe el encabezado-->
+        <h2 class="title-item">
+          <span class="position">1</span><!--elemento parecido a DIV ya que contiene para poder ser seleccionado y usado, DIV es un bloque, SPAN se coloca en la misma linea del contenido-->
+          Amore
+        </h2>
+      </header>
+      <section>
+        <img src="../assets/images/amore.jpg" class="main-image" alt="Imagen del restaurant Amore">
+        <div class="text">
+          <address class="address"> <!--Elemento HTML para direcciones-->
+            <i class="fas fa-map-marker-alt"></i>
+            Dirección Av te
+          </address>
+          <p class="paragraph">El Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta manera para permitir la presentación de elementos gráficos en documentos, sin necesidad de una copia formal. </p>
+          <p class="paragraph">El uso de Lorem Ipsum permite a los diseñadores reunir los diseños y la forma del contenido antes de que el contenido se haya creado, dando al diseño y al proceso de producción más libertad..</p>
+          <p class="paragraph">Se cree ampliamente que la historia de Lorem Ipsum se origina con Cicerón en el siglo I aC y su texto De Finibus bonorum et malorum. Esta obra filosófica, también conocida como En los extremos del bien y del mal, se dividió en cinco libros. El Lorem Ipsum que conocemos hoy se deriva de partes del primer libro Liber Primus y su discusión sobre el hedonismo, cuyas palabras habían sido alteradas, añadidas y eliminadas para convertirlas en un latín sin sentido e impropio.</p>
+          <p class="paragraph">No se sabe exactamente cuándo el texto recibió su forma tradicional actual. Sin embargo, las referencias a la frase "Lorem Ipsum" se pueden encontrar en la Edición de la Biblioteca Clásica Loeb de 1914 del De Finibus en las secciones 32 y 33. Fue en esta edición del De Finibus en la que H. Rackman tradujo el texto. El siguiente fragmento se selecciona de la sección 32:</p>
+
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="../javascript/main.js"></script>
+</body>
+</html>

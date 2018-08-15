@@ -1,0 +1,27 @@
+/*position: static | absolute | relative | fixed | | sticky*/
+
+/* top, bottom, left, right*/
+.elemento{
+  background: purple;
+  width: 200px;
+  height: 100px;
+  position: sticky;
+  /*
+  top: 100px;
+  left: 200px
+  no tiene efecto pues a pesar de estar modificado, no está posicionado pues su valor es static*/
+  top: 100px;
+  right: 200px;
+}
+
+.contenedor-posicionado{
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: pink;
+  top: 200px;
+}
+
+body{
+  height: 120vh;
+}

@@ -1,0 +1,381 @@
+El nombre de la carpeta ASSETS
+hace referencia a los recursos o elementos que se necesitan para el desarrollo del proyecto
+
+Selectores.
+selector bloque
+slector {
+  propiedad: valor; }
+
+  sleector por
+
+  nombre, solo se coloca el nombre de la etiqueta y el bloqeu de propiedades
+
+  clase, para asignarlos por grupos, se necesita asignar una clase a un elemento que se queira estilizar o modificar, mediante
+    el atributo class. El nombre dentro del atributo CLASS es arbitrario, puede contener n clases, nungun elemento debe tener mas de un atributo CLASS
+    class="A B C"
+
+    los selectores de clase se distinguen por tner un punto al inicio del nombre del selector
+    .clase{atriubo:valor;}
+    todo esto se aplica a los elemntos que tengan esa clase
+
+  id, es único, no peude ni haber 2 elementos con el mismo ID lo que no pasa con Class.
+  un elemento solo puede tener un ID, una vez asignado un id no se puede volver a asignar a ningun otro
+  se escribe iniciando un un #
+  #btn-pay{propiedad:valor}
+
+
+  Link
+  Esta etiqueta no requeire cierre y permite unir archivos a nuestro docuemnto
+  <link href="./assets/css/main.css"
+  el punto indica que debe buscar la carpte CSS en la misma carpeta donde está el archivo HTML
+  rel="stylesheet">
+  define la relacion entre el documento linkeado y nuestro documento a donde se está linkeando
+
+
+  entonces:
+  <link href="./assets/css/main.css" rel="stylesheet">
+
+  Normalizador de css elimina los archivos que agregan los clientes (navegadores)
+  una de las librerias mas comunes para esto es normalize.css
+  esto apra que se muestren todos los elementos como son definidos
+  se puede importar el archivo desde internet o importatlo localmente (descargandolo)
+
+  section, header, nav, article
+, footer, address.
+cada etiqueta tiene un valor semantico
+la semantica estudia el significado de las expresiones, no afecta la apariencia pero si el significado
+Los programas de computadora tambien acceden a los sitios web, estas los entienden leyendo etiquetas y metadatos
+crawlers, arañas, scrappers.
+ej leen sitios de todo el mundo para indexarlos
+
+crawlers y arañas, analizan los links para poder crear la relación entre las webs
+scrappers, analizan los datos para su almacenamiento y comparación de datos entre webs, ej. precios de hoteles, climas, etc
+
+las talbas buscan organizar los datos de forma de tabla
+
+
+spride, un grid con muchas imagenes pegadas, tomar un pedacito de este para usarlo
+
+fuentes, son tipografías creadas con vectores lo que quiere decir, que estos pueden ser estirados o manipulados sin perder calidad en la imagen
+
+UN SITIO WEB SOLO DEBE TENER 1 H1 SIEMRPRE! O SE LE QUITA FUERZA
+
+para salir a un nivel superior se usan 2 puntos
+../Dirección
+
+
+
+----Curso de diseño para programadores
+
+Páginas con diseño flat, es decir, plano, son minimalistas
+---
+El diseño plano es un estilo de diseño de interfaz que enfatiza uso mínimo de elementos estilísticos que da la ilusión de tres dimensiones (como el uso de sombras de gota, degradados o texturas) y está centrado en un minimalista uso de elementos sencillos, tipografía y colores planos.1​2​ Los diseñadores pueden preferir diseño plano porque deja diseños de interfaz para ser más aerodinámicos y eficaces. Es más fácil para transmitir información rápidamente mientras que al mismo tiempo, es visualmente atractivo y accesible.3​ Además, se hace más fácil el diseño de una interfaz que es sensible a los cambios de tamaño en distintos navegadores a través de diferentes dispositivos. Con menos elementos de diseño, los sitios web son capaces de cargar más rápido y cambiar de tamaño fácilmente, y aun así, lucen muy bien sus bordes y puntas en pantallas de definición alta.1​ Como aproximación de diseño, es a menudo contrastado a esqueuomorfismo y diseño rico.4​1​ (Aunque tenga que ser notado que en el diseño plano se puede utilizar esqueuomorfismo tanto como interfaz de usuario de diseño realista).
+---
+
+
+Oscuro para el texto, colores Acentuados para los botones
+
+se pueden emplear colores solidos y degradados, cada degradado tiene su propia sintaxis
+
+https://uigradients.com/#PureLust
+https://webgradients.com
+
+
+para que las nuevas tecnologías se integren en un navegador web la W3C escribe como debe funcionar,. propiedades, etiquetas, configuración, etc.
+https://www.w3.org/TR/css3-images/
+
+progresive enhancement, se prioriza el contenido (mejora progresiva)
+Fallback, se refiere a un respaldo, a algo anterior para algún navegador que aún no lo soporte o no pueda desplegarlo
+
+
+https://caniuse.com/
+Muestra los navegadores y el soporte que tienen
+
+
+http://flexboxfroggy.com/#es
+Práctica para flexbox jugando
+
+posicionamiento, layouts, estructuras, dispositivos, etc, complican el posicionamiento en la web
+CSS grid, flexbox, absolute/relative, propiedades de display
+
+
+Centrar un elemento horizontal y verticalmente, empleando Flexbox
+Flexbox, herramienta diseñada para estructurar sitios web
+
+
+FLEXBOX--
+  propiedad
+justify-content, alinea elementos horizontalmente
+
+  valores
+  flex-start: Alinea elementos al lado izquierdo del contenedor.
+  flex-end: Alinea elementos al lado derecho del contenedor.
+  center: Alinea elementos en el centro del contenedor.
+  space-between: Muestra elementos con la misma distancia entre ellos.  La distribuye por la pag
+  space-around: Muestra elementos con la misma separación alrededor de ellos.  solo entre ellos
+
+  propiedad
+align-items, alinea elementos verticalmente
+
+  valores
+  flex-start: Alinea elementos a la parte superior del contenedor.
+  flex-end: Alinea elementos a la parte inferior del contenedor.
+  center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+  baseline: Muestra elementos en la línea base del contenedor
+  stretch: Elementos se estiran para ajustarse al contenedor.
+
+
+  propiedad
+flex-direction, define la dirección de los elementos en el contenedor
+
+  valores
+  row: Elementos son colocados en la misma dirección del texto.
+  row-reverse: Elementos son colocados en la dirección opuesta al texto.
+  column: Elementos se colocan de arriba hacia abajo.
+  column-reverse: Elementos se colocan de abajo hacia arriba.
+
+  //Nota que cuando estableces la dirección a una fila invertida o columna, el inicio y el final también se invierten
+  //Nota que cuando es una columna, justify-content cambia a vertical y align-items a horizontal.
+
+  A veces, invertir el orden de una fila o columna de un contenedor no es suficiente. En esos casos, nosotros podemos
+   aplicar la propiedad ORDER a elementos individuales. Por defecto, los elementos tienen un valor 0, pero nosotros podemos
+   usar esta propiedad para establecerlo a un número entero positivo o negativo.
+
+ex.
+#pond {
+  display: flex;
+}
+
+.yellow {
+ order: 1;//pueden ser valores negativos
+}
+
+
+Otra propiedad que puedes aplicar a elementos individuales es |align-self|.
+Esta propiedad acepta los mismos valores de |align-items| y sus valores son usados para un elemento específico
+
+ex.
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+
+align-self: flex-end;
+}
+
+propiedad
+  flex-wrap, para distribuir Elementos
+
+valores
+  nowrap: Cada elemento se ajusta en una sola línea.
+  wrap: los elementos se envuelven alrededor de líneas adicionales.
+  wrap-reverse: Los elementos se envuelven alrededor de líneas adicionales en reversa.
+
+
+
+  Las dos propiedades |flex-direction| y |flex-wrap| son usadas a menudo en conjunto con la
+  propiedad abreviada |flex-flow|, la cual fue creada para combinarlas. Esta propiedad abreviada,
+   acepta un valor de cada una separada por un espacio.
+
+  Por ejemplo, puedes usar |flex-flow| para establecer filas y envolverlas.
+
+
+propiedad
+  align-content, para establecer como múltiples líneas están separadas una de otra.
+
+valores
+  flex-start: Las líneas se posicionan en la parte superior del contenedor.
+  flex-end: Las líneas se posicionan en la parte inferior del contenedor.
+  center: Las líneas se posicionan en el centro (verticalmente hablando) del contenedor.
+  space-between: Las líneas se muestran con la misma distancia entre ellas.
+  space-around: Las líneas se muestran con la misma separación alrededor de ellas.
+  stretch: Las líneas se estiran para ajustarse al contenedor.
+
+Esto puede ser confuso, pero |align-content| determina el espacio entre las líneas,
+ mientras que |align-items| determina como los elementos en su conjunto están alineados dentro del
+  contenedor. Cuando hay solo una línea, align-content no tiene efecto.
+
+fuentes.
+https://fonts.google.com/
+
+
+
+Modificadores de texto
+
+text-transform, perite manupular mayusc, min del texto
+text-decoration ,  permite controlar subrayado de texto, tachado, none, etc, etc
+line-height, define el alto de las lineas donde se va a escribir, por lo tanto ayuda a dar espaciado entre las lineas
+          de texto
+
+
+PSEUDO CLASE
+se usan para definir propiedades para un elemento cuando se encuentra en un estado en especifico ej(un elemento tiene
+el foco, o mouse sobre el, etc)
+nth-child, mediante un num o formula permite seleccionar a los hijos de un padre
+
+BORDS Y SOMBRAS
+los bordes pueden usarse para separar secciones del doc o delimimtar algun elemento, solida, punteados y con efectos 3d
+https://www.w3schools.com/css/css_border.asp
+Las sombras ayudan a dar profundidad, a definir que tan cerca o lejos esta un elemento con el obj de resaltar los componentes
+mas importantes de la pagina
+
+SHORTHAND PROPERTIES
+propiedades en CSS que nos permiten especificar el valor de multiples propiedades pero en una sola
+declaración, sirve para imagenes, fondos, tipografía, etc
+por lo general un SHORTHAND PROPERTIES se ve como un elemento con multipres valores separados por espacios (no siempre pero si por lo general)
+
+
+ESPECIFICIDAD
+como se determina que elemento debe utilizarse por encima de otros
+es un peso que se le asigna a una declaración, entre mayor mas anta la presedencia para qeu las propiedades se apliquen
+a un elemento, así el navegador decide cual aplicar
+
+los estilos declarados por el atributo via STYLE tienen el peso mas Alto
+STYLE
+la regla IMPORTANT es la unica manera de darle la importancia, no altera el peso, solamente indica la importancia
+ej, div{background-color: red !important;} esta toma mayor presedencia
+EVITAR USAR ESTA REGLA PUES ES MALA PRACTICA
+
+1 IMPORTANT
+2 STYLE
+
+Peso de Selectores
+
+1. Selectores por ID
+2. Selectores de clase, atributos y pseudo clases
+3. Selectores de tipo y pseudo elementos
+
+ESPECIFICIDAD son pesos, por lo tanto pueden combinarse
+entre mas especifico sea un selector este toma mas peso
+ej.
+#div.content ->mas especifico
+div#div ->menos especifico
+#div -> menos menos especifico
+
+Recuerda, entre mas específico el elemento, ese tiene mayor peso y es el que gana por ser mas especifico
+
+
+POSICIONES
+definir donde aparecerá un elemento de la pag web
+por eso esta la propiedad POSITION, no define donde aparecera, si no como las posiciones top, left, right, bottom, especificarán
+donde se posicionará el elemento
+position: static relative absolute fixed sticky
+
+todos los elementos creados desde el inicio comienzan con el valor de static, se dice que el elemento no está posicionado
+ya que su posicion no se altera por lo mas minimo por top, right, left y bottom (propieddades que afectan la posición del elemento)
+
+cuando la propiedad es fixed (property: fixed) las propiedaddes especificadas (bottom: 10px, letf: 10px)
+se añaden de manera relativa al viewport
+
+top, bottom, left, right -> propiedades que afectan la posición del elemento
+
+-relative, modifica la posicion dl elemento usando las propiedades indicadas, tomando ocmo origen la posicion donde se encuentra
+
+-fixed, las propiedades especificadas se añaden de manera relativa al viewport (viewport es todo lo que se ve en pantalla)
+    al decir que es relativo al viewport significa que:
+    1 no importa donde este originalmente el elemento, se colocará relativo a la pantalla y
+    2 no se vera afectado por el scroll
+    //lo toma entonces desde donde está todo el viewport y la orilla de la pantalla
+
+-absolute, la posicion es relativa al contenedor mas cercano que esté posicionado
+  si ningun padre esta posicionado es relativo al viewport, pero este si se ve afectado por el scroll (no como fixed)
+  por lo tanto los valores de top, bottom, left, right  son relativos al contenedor ya que esta posicionado
+  si no esta posicionado son relatidos al viewport (toda la pantalla)
+-sticky, es un valor especial que intercambia los valores del elemento entre relative y fixed, dependendo de si el elemento
+se sale del viewport por el scroll
+
+llegando a un punto, este deja de scrollear y se queda fijo en un punto
+se dice que es sticky porque se queda "pegado" llegado a cierto punto
+
+
+ANIMACIONES EN CSS
+definen como debe comportarse un elemento paso a paso, estas pueden consumir mucha bateria del dispositivo, recuersos, etc, por ello es necesario hacer una buena animacion
+
+Para crear una animacion es necesario:
+Crear los keyframes que la componen (la animacion de compone de fotorgramas, en cada fotograma el elemento cambia su estado o se mueve
+de manera que cuando se juntan cientos de fotorgramas y se pasan muy rapido se genera la animación)
+
+los keyframes o fotorgramas clave, solo se definien puntos clave y luego CSS se encarga de rellenar los fotogramas uno a uno
+para generar la sensación de una animación fluída
+
+Animaciones ya predefinidas: https://daneden.github.io/animate.css/
+
+
+PSEUDO CLASES
+https://www.w3schools.com/css/css_pseudo_classes.asp
+Cada elemento puede tener difernes propiedades y estados
+Ej Hover, edo de un elemento cuando un mouse esta sobre el, el estado se encuentra separado del selector por dos puntos :
+a:hover{}
+dentro de un selector de pseudo clase se puede modificar lo que se quiera colores, margenes, tamaños, etc
+
+
+-----------------DISEÑO RESPONSIVO--------------------------------
+Para el diseño responsivo, se puede entrar a el modo desarrollador en el navegador, dar click sobre, Toogle Device Toolbar e ir cambiando el como se ve en diferentes
+dispositivos, sin necesidad de abrirlo en un celular específicamente
+
+Viewport
+es la parte visible de la pagina para el usuario, ej puede medir 1900x3000 y no se vera toda al mismo tiempo, quizas mida
+200x800, por lo tanto el navegador dara barras de desplazamientopara poder ver todo el contenido de la pagina en el viewport.
+
+Este cambia su tamaño en el dispositivo en el que se vé
+
+Una pagina que requiera moverla horizontalemtne para poder ver el contenido o hacerle zoom, es una pag mal diseñada
+ya que la experiecia del usuario es mala
+
+UNIDADES DE MEDIDA
+con estas se peuden especificar: tamaños, espacios y posiciones
+
+podemos dividir las unidades en 2 grupos, ABSOLUTAS y RELATIVAS
+ABSOLUTAS tienen el mismo valor sin importanr donde se definen, resolución y ningun factor externo las altera
+Pixeles (px)
+Centímetros (cm)
+Pulgadas (in)
+Milímetros (mm)
+--Fraccionales de las pulgadas--
+Picas (pc)
+Puntos (pt)
+--------------------------------
+
+RELATIVAS, no tienen un valor definido, el val final de cada num asignado es relativo a dif factores ((resolucion, contenedor, pantalla, etc))
+Porcentajes (%)
+Ems (em) relativos al tamaño de la fuente, por lo tanto si al fuente mide 12px, entonces 2em=24px
+Exs (ex) relativos al alto de la letra X en minúscula de la fuente en ese momento, entonces si tiene de alto 10px = 2ex==20px
+Rems (rem) utilizan la fuente de raiz del documento, es decir el HTML
+_--Relativas al Viewport--_
+VW (vw), cada unidad es 1% del ancho del viewport, 100unidades = 100% del ancho del viewport
+VH (vh), cada unidad es 1% del alto del viewport
+VMIN (vmin), 1% del ancho u alto dependiendo cual de los 2 es el mas pequeño
+
+
+---------MAS UTILES--------------
+En ABSOLUTAS, se usarán (PX) y rara vez (IN)
+En RELATIVAS, se usarán (EM), (%) y unidades del Viewport (VW, VH, VMIN)
+
+Las unidades relativas, hacen que el diseño sea flexible y se adapte a dif resoluciones,
+los EM son utiles porque la fuente no debe ser igual en computadora y movil, repercuten en padding y margin
+
+
+MEDIA QUERYS
+para poder especificar valores de CSS dependiendo del tipo de pantalla en el que estamos.
+nos permiten especificar propiedades que solo se aplicaran si una condición se cumple, para especificar una mediaquery se usa la regla
+@media (condiciones que debe cumplir){}
+
+para ver si se aplico, en inspeccionar, se ve en la parte de estilos si se aplicó o no
+
+Las tablas, se peude buscar un diseño deseado para desplazamiento horizontal, o acomodarlo vertical, todo depende de lo que espera el usuasrio
+en este caso romperé la tabla en distintas partes pequeñas
+
+MOBILE FIRST
+en 2009 Luck Roblebski introdujo este concepto
+estrategia que invertia el proceso de diseño, 1ro se disñea para las pantallas mas pequeñas y populares, para ir adaptanto
+prograsivamente el diseñoa pantallas mas grandes, se va adaptando la experiencia y diseño
+diseño, rendimiento capacidades de HW
+
+Los media query deben estar dieñados para los dispositivos mas grandes y capaces y no para los menos
+
+Entonces los CSS deben ser diseñados para paginas mas chicas y posteriormente irlas adaptando con media querys a dispositivos mas grandes
+
+//
+El clonar significa que va a descargarlo de gitHub y lo va a guardar en mi carpeta personal

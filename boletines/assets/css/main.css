@@ -1,0 +1,272 @@
+/*  COLORES
+Naranja: F88D2B
+Rojizo: D2451E
+amarillo: F7C768
+rosa: F6E4CB
+cafe: 726D63
+rosita de link: rgb(208, 135, 199)
+
+Oscuro para el texto, colores Acentuados para los botones
+
+se pueden emplear colores solidos y degradados, cada degradado tiene su propia sintaxis
+https://uigradients.com/#PureLust
+*/
+
+@font-face {
+  /*Fuentes personalizadas, OJO estas requieren licencia para poder se usadas, else, usar google Fonts*/
+  /*font-family: nombreDeMiFuente;
+  src: url(archivoFuente/fuente.woff);/*ttf, woff, svg, etc formatos de fuente*/
+  /*font-family: 'Nunito Sans', sans-serif; /*Es la fuente importada de google fonts*/
+}
+
+/*En esta etiqueta se aplica a todo el sitio web, a diferencia de @font-face que solo es para especificarla
+y se usa cada que se especifica la clase en una sección de la web*/
+html{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+img{
+  max-width: 100%;/*para evitar que desborde*/
+}
+
+a{
+  /*Modificadores de texto*/
+  text-decoration: none;
+  color: rgb(208, 135, 199);
+}
+
+/*PSEUDO CLASES*/
+a:hover{
+  opacity: 0.8; /*Reducimos la opacidad, recibe valores de punto decimal 0-1*/
+}
+
+a:visited{
+
+}
+
+a:active{ /*Cuando da click sobre el elemento, usado sobre botones y links*/
+  color: red;
+}
+
+a:focus{ /*Cuando el elemento tiene el foco, ejemplo cuando se tiene seleccionado al pulsar TAB*/
+  background-color: rgba(230, 171, 123, 0.7);
+}
+
+.title{
+  text-transform: uppercase; /*Todo en mayusculas*/
+  text-align: center;
+}
+
+.title-item{
+  /*--------Se peude reducir a una sola propiedad SHORTHAND-----*/
+  /*
+  border-bottom-style: solid;/*Define el tipo de borde*/
+  /*border-width: 3px; /*Define el grosor*/
+  /*border-color: rgb(200, 43, 240);*/
+  /*--------------------------------------------------*/
+  border-bottom: solid 2px rgba(254, 87, 94, 1); /*SHORTHAND, no lee en base a un orden solo debe tener definidos
+  la propiedad "border"(en este caso), un valor "solid/dash/etc", valor numerico "2px"(grosor) y un valor hex/etc para color(#as1)
+  pueden tener cualquier orden*/
+  /*border puede aplicarse a cada lado del borde top, bottom, left, right*/
+  /*El border se coloca después del padding*/
+  padding-bottom: 1em;
+  /*padding-top: 2em;*/
+  /*Estas 2 propiedades se pueden resumir en un SHORTHAND*/
+  /*para shorthand de padding y margin*/
+
+  /*padding:*/
+  /*si tiene 4 valores se sigue un orden empezando por la derecha como manecillas de reloj, up, right, down, left*/
+  /*si tiene 2 valores el 1ro arriba&abajo el 2do izq/der*/
+  /*poner 1 solo vlaor significa que se pone para todos los lados*/
+  /*ej bordes redondeados*/
+  font-size: 2em;
+  font-weight: 700;
+
+}
+
+.address{
+  font-weight: bold;
+  color: #642b73;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block; /*los elementos con propiedad inline ignoran el margen*/
+}
+
+.container{
+  background: #F88D2B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, #ff5858, #f857a6);
+  background: -o-linear-gradient(left, #ff5858, #f857a6);
+  background: linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /*La mejora progresiva (progresive enhancement) se nota al poner 1 fondos solido soportado por cualquier navegador y posterior los degradados*/
+/*Si no entinede CSS una propiedad la ignora*/
+
+  height: 100vh; /*1° idea para usar todo el alto de la pantalla, depende el padre de nuestro NODO, el valor en %
+  es relativo al valor total del padre. Entonces queire decir, todo el alto del NODO padre*/
+  /*vh viewports https://devcode.la/tutoriales/unidades-vh-vw-css/
+  por lo tanto para usar el alto total podemos usar 100vh, representa el alto total de la pantalla*/
+  /*width: 100vw; /*esto es para utilizar todo el ancho*/
+  /*Para centrarlo, asignamos al propiedad Flex al display, los nodos dentro del contenedor adoptan
+   su posicionamiento usando como posición el elemento flexbox*/
+   display: flex;
+   /*Alinean horizontal y verticalmente en este caso, pues estos dependen de la dirección del layout, que se puede manipular
+   con al propiedad fexdirection de CSS*/
+   align-items: center;
+   justify-content: center;
+   /*http://flexboxfroggy.com/#es  para practicar*/
+}
+
+.content{
+  position: relative; /*Para poder posicionar el elemento del boton X de regreso a index, con la finaldiad de marcar el elemento como posicionado*/
+/*Vamos a manejar el Flexbox*/
+  max-width: 960px;/*Ancho*/
+  /*max-height: 500px;/*Alto, modificamos para el media query*/
+  width: 100%;/*Se expandirá todo lo que dé, sin romper sus límites*/
+  height: 80vh; /*modificamos para el media query, paar que siemrpe sea del 80% de toda la pantalla*/
+  background-color: #fff;
+
+  /*Posicionamiento en la parte central de la pantalla*/
+  /*Redimencionamos el contenedor, por lo general los contenedores, como los DIV ocupan todo el ancho de la pantalla
+  en lo alto solo ocupan el espacio que necesitan*/
+
+  /*Sombras*/
+  /*DiferenciaHorizontal DiferenciaVertical Desenfoque Amplitud ColorDeSombra*/
+  /*se ignora valor de Amplitud, si quitamos otro ignora tambien a Desenfoque, el resto son necesarios*/
+  /*se peuden definir multiples sombras separandolas por una coma ,*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+  overflow: scroll;
+  /*Propiedad que define como se comporta el contenido que sale de las dimensiones del elemento
+  Al definirle scroll agrega barras de desplazamiento al elemento mismo, no a la pagina*/
+}
+
+/***************según MOBILE FIRST**************/
+/*por lo tanto por defecto estos son los valores que se tomaran por default*/
+.content{
+  padding: 1em;
+}
+/*tansformamos columnas en filas de la tabla, usando display-block en el selector td*/
+td{
+  display: block;
+  width: 100%;
+}
+
+/*empleamos una pseudoclase sobre TD para obtener el primer elemento que ne este caso es el num de ranking*/
+td:nth-of-type(1){
+/*permite seleccionar un elemento basado en su posición cuando está a lado de etiquetas de su mismo tipo*/
+/*slecciona el num tal del tipo: (nth-of-type())*/
+font-size: 1.5em;
+font-weight: bold;
+color: #642b73;
+}
+
+th{
+  display: none;
+}
+/******************************/
+
+
+/*Funciona como el posicionamiento*/
+.actions{
+  position: absolute; /*Sera relativo al contenedor los valores*/
+  top: 1em;
+  right: 1em;
+}
+
+/*Diseño del link que funciona comoo boton X pra regresar*/
+.close{
+  height: 40px;
+  width: 40px;
+  color: white;
+  /*Modificamos el redondeado del borde para poder hacerlo redondo*/
+  border-radius: 50%; /*Debe tener almenos 50% de redondeado para poder hacerlo redondo, cualquier valor mas alto hace que se siga viendo circular*/
+  background-color: rgba(254, 55, 63, 1);
+  display: inline-block; /*Para hacer qeu deje de ignorar nuestros valores de  height y width para que su display no sea inline*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 400;
+  cursor: pointer; /*Modifica el puntero para que sea el de la manita*/
+  /*Para centrar el contenido empleamos Flexbox*/
+  display: flex;
+  /*Ambos para centrarlo horizontal y verticalmente*/
+  align-items: center;
+  justify-content: center;
+  /*Estos 2 ultimos elementos explican porque la X fue colocada dentro de un elemento span, para que flexbox
+  centre este elemento dentro del boton circular que es el padre*/
+}
+
+.paragraph{
+  line-height: 1.8em; /*pueden ser unidades de medida, porcentajes*/
+  font-weight: 400; /*Grosor, el grosor debe colocarse como uno de la fuente que se importó ...to+Sans:400,700*/
+}
+
+.table{
+  width: 100%; /*Especificamos qeu utilize todo el ancho de la pantalla*/
+  /*los bordes de las celdas por defecto se crean de 2px, esto puede interferir con el diseño*/
+  border-spacing: 0;/*Define el espaciado entre celdas*/
+  /*border: solid 1px;*/
+  /*2 tipos de celda, las de encabezado TH y las del cuerpo TD*/
+}
+
+.table td, .table th{ /*todos los elementos TD dentro de la clase table y con la coma , se puede colocar
+  otro selector*/
+  padding: 1em;
+  text-align: left;
+}
+
+.table tr:nth-child(even){ /*PSEUDO CLASE*/
+  /*Ej al pasar el 1, se selecciona el elemento 1 de todos los hijos del padre
+  odd, solicitamos los impares
+  even, solicitamos los pares*/
+  background-color: #F6E4CB;
+}
+
+.fa-star, .far-star{
+ color: #F7C768;
+}
+
+.position{
+  background-color: rgba(254, 87, 94, 1);
+  color: white;
+  /*padding: 1em 2em 3em 4em; /*Empleando SHORTHAND*/
+  padding: 0.5em;/*era 10px, pero se cambio para que dependa de la fuente*/
+  border-radius: 0em 2em 0em 2em; /*SHORTHAND border-top-left-radius border-top-right-radius border-bottom-left-radius border-bottom-right-radius*/
+  margin-right: 0.5em;
+}
+
+.main-image{
+  float: left;/*Hace que el texto fluya a la derecha de la imagen*/
+  margin-right: 1em;
+  height: 250px;
+  width: 300px;
+}
+/*Comentarios en CSS*/
+
+
+/*Media Query*/
+/*@media (max-width:500px){/*solo se aplicaran para pantallas con maximo de 500px*/
+/*@media print{/*para cuando va a ser impresa*/
+@media (min-height:550px) {/*para definir el alto del contenedor en pantallas de al menos 550px, para el resto usamos 80vh, defnido mas arriba en .content*/
+  .content{
+    height: 500px;
+  }
+}
+
+@media (min-width:900px) {/*para pantallas mas grandes vamos a agrandar el padding*/
+  th{
+    display: table-cell;
+  }
+  td{
+    width: auto;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+  .content{
+    /*Para dar los espacios*/
+    padding: 1.8em;
+    /*la ventaja de usar EMS es que al usar otro tamaño de fuente todo se adapta a ella,
+    asi se comportara en pantallas grandes como fue definido en el media query*/
+  }
+
+}
