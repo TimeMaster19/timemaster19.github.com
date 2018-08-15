@@ -53,7 +53,7 @@ links.forEach(function(link){
     //setInterval, despues de cierto tiepo constantemente
 
     setTimeout(function(){
-        location.href = "/"; //Objeto con un atributo href y se le asigna un valor
+        location.href = "/boletines"; //Objeto con un atributo href y se le asigna un valor, si dejamos solamente '/' nos llevara asta la raíz
     },1000);//que la ejecute despues de 1000milisegundos = 1seg
 
     return false; //2da forma
