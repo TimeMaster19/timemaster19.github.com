@@ -17,7 +17,7 @@
 		//requiero declarar unas vars
 		$activo = 0;
 		$tipo_usuario = 2; //solo usuarios normales
-		$secret ='6Lc0o14UAAAAAJRuj50k-2e4r9zPhvKwY_jSv8N8';
+		$secret ='claveSecreta';
 
 		//validacion para revisar captcha
 		if(!$captcha){
